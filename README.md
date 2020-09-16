@@ -1,4 +1,4 @@
-# useful-bash
+# dotfiles
 
 tudo o que eu tenho nesse repositorio diz respeito ao que eu usava em meu sistema linux enquanto eu mantia uma instalacao do i3 + i3-gaps bla bla bla 
 
