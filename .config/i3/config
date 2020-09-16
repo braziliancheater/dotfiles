@@ -10,7 +10,7 @@
 set $mod Mod4
 
 # escolha uma fonte personalizada
-font pango:cherry 9
+font pango:tewi 9
 
 # stylo e cores da borda
 focus_follows_mouse  yes
@@ -33,10 +33,10 @@ bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $oute
 bindsym $mod+Ctrl+g exec compton; gaps inner all set 0; gaps outer all set 0
 
 # arruma as bordas 
-smart_borders on
-smart_borders no_gaps
-border_radius 3
-new_window normal
+#smart_borders on
+#smart_borders no_gaps
+#border_radius 3
+#new_window normal
 
 # ativa as gaps somente quando a mais de um container 
 #smart_gaps on
@@ -134,7 +134,7 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+7 move container to workspace numbr $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
@@ -193,34 +193,37 @@ set_from_resource $fg foreground
 set_from_resource $bg background 
 
 # classe                borda   fundo   texto   indicador
-client.focused          $bg     $bg     $fg     $bg
-client.focused_inactive $bg     $bg     $fg     $bg 
-client.unfocused        $bg     $bg     $fg     $bg
-client.urgent           $bg     $bg     $fg     $bg 
-client.placeholder      $bg     $bg     $fg     $bg 
+#client.focused          $bg     $bg     $fg     $bg
+#client.focused_inactive $bg     $bg     $fg     $bg 
+#client.unfocused        $bg     $bg     $fg     $bg
+#client.urgent           $bg     $bg     $fg     $bg 
+#client.placeholder      $bg     $bg     $fg     $bg 
 
 ############## BAR ##################################
 
 # inicia a i3blocks no meu caso, pode ser usado para iniciar qlq coisa como polybar
-bar {
-	tray_output primary
-    	status_command i3blocks
-    	i3bar_command i3bar -t
-    	position bottom
-    	separator_symbol "|"
-    	strip_workspace_numbers yes
+#bar {
+	#tray_output primary
+    	#status_command i3blocks
+ #   	status_command polybar
+	#i3bar_command i3bar -t
+    	#position bottom
+    	#separator_symbol "|"
+    	#strip_workspace_numbers yes
         #   Color panel
-colors {
-        background #303030
-        statusline #d0e1d4
-        separator  #c1d0c1
+#colors {
+ #       background #303030
+  #      statusline #d0e1d4
+   #     separator  #c1d0c1
 
    #                        border  backgr   text
-        focused_workspace   #FF6F54 #FF6F54 #FFF2CE
-        inactive_workspace  #303030 #303030 #a7afa9
-        urgent_workspace    #2e394a #2e394a #e7dfd9
-       }
-}
+    #    focused_workspace   #FF6F54 #FF6F54 #FFF2CE
+     #   inactive_workspace  #303030 #303030 #a7afa9
+      #  urgent_workspace    #2e394a #2e394a #e7dfd9
+      # }
+#}
+
+exec polybar -r example
 
 ############################### EXECS ##################
 
@@ -246,4 +249,3 @@ bindsym $mod+m       exec spotify
 #	i3,i3gaps,i3blocks,i3lock examples
 #		     by crim3s
 #<-------------------------------------------------->
-

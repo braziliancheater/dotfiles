@@ -1,8 +1,6 @@
-/* -*- mode: css; -*- */
-
-/***** Rofi / crim3s ****************************/
+/***** rofi config | crim3s ****************************/
 
 configuration {
 window-format: "{n}";
-theme: "sla";
+theme: "minimal";
 }
