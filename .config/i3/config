@@ -227,7 +227,7 @@ exec polybar -r example
 
 ############################### EXECS ##################
 
-exec xinput --set-prop 8 'libinput Accel Speed' -0.7
+xinput --set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' -0.7 
 exec killall -q compton 
 exec_always compton --config ~/.config/compton/compton.conf
 exec_always --no-startup-id picom
