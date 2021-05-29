@@ -1,9 +1,13 @@
-# dotfiles
+# dotfiles 💻
 
-everything inside this repo, is from an old installation of my arch linux while using a wm in this case i3/i3gaps! this is more of a backup in case i lose something but sure you can learn from this.
+uma pequena coletânea de scripts que eram usados em minhas instalações de ubuntu/arch rodando gnome/i3.<br> <br> 
+scripts que em teoria funcionam:<br>
+alguns arquivos de configuração para awesomevm.<br>
+meu .config do i3 gaps.<br>
+um programa que instala oh my zsh que em teoria funciona em qualquer distro?<br> 
+um script que faz fonts em bitmap funcionarem no arch.<br>
+arquivos personalizados do kitty, polybar, rofi que funcionam perfeitamente com tanto que sejam instalados corretamente.<br>
 
-some of the scripts and some more stuff may not work as it was made for my os but with minnor tweaking you can get it working on any distro, i may do it sometime later but am not using linux rn.
+## problema com o i3
 
-if you have any questions please send me a pm on discord!
-
-brazilian ~
+provavelmente um erro que você ira enfrentar ao clonar a .config e a falta da fonte > [cherry](https://aur.archlinux.org/packages/cherry-font-git/) < caso você esteja usando arch o arquivo que permite o use de fontes em bitmap ja esta incluso na repo.
